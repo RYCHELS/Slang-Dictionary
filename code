@@ -1,0 +1,17 @@
+meme_dict = {
+            "CRINGE": "Sesuatu yang sangat aneh atau memalukan",
+            "LOL": "Tanggapan umum terhadap sesuatu yang lucu",
+            "CREEPY": "menakutkan",
+            "AGGRO": "untuk menjadi agresif"
+            }
+            
+word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
+word = word.upper()
+
+for i in range(5):
+    if word in meme_dict.keys():
+      # Arti kata ditemukan
+      print(meme_dict[word])
+    else:
+      # Arti kata tidak ditemukan
+      print("Maaf, aku tidak mengerti arti kata '{word}'.")
